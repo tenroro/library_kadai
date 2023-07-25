@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/tosyo.css')}}" />
+    <title>本の削除</title>
+  </head>
+  <body class="backgrounds">
+    <div>
+      <h3>削除画面</h3>
+      {% if error != null %}
+      <p style="color: red">{{error}}</p>
+      {% endif %}
+      <form action="{{url_for('book_delete')}}" method="post">
+        id:<input type="text" name="id" value="{{id}}"><br />
+        <button type="submit">削除</button>
+      </form>
+    </div>
+  </body>
+</html>

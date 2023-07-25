@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/tosyo.css')}}"/>
+    <title>編集完了</title>
+  </head>
+  <body class="backgrounds">
+    <form action="{{url_for('book_update')}}" , method="post">
+      <div>
+        <h3>編集</h3>
+        <p>id</p>
+        <input type="text" name="id" /><br/>
+        <label for="ISBN">ISBN:</label>
+        <input type="text" id="ISBN" name="ISBN"><br/>
+        <label for="title">タイトル:</label>
+        <input type="text" id="title" name="title"><br/>
+        <label for="author">著者:</label>
+        <input type="text" id="author" name="author"><br/>
+        <label for="publisher">出版社:</label>
+        <input type="text" id="publisher" name="publisher"><br/>
+        <input type="submit" value="更新"/>
+      </div>
+    </form>
+  </body>
+</html>

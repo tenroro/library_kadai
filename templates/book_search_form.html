@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="stylesheet" href="{{url_for('static',filename='css/tosyo.css')}}"/>
+    <title>検索</title>
+  </head>
+  <body class="backgrounds">
+    <div>
+      <h3>検索したい本のタイトルを入力</h3>
+      <form action="{{url_for('book_search')}}" method="post">
+        タイトル:<input type="text" name="title" value="{{title}}"><br/>
+        <button style="color:red" type="submit">検索</button>
+      </form>
+    </div>
+  </body>
+</html>
