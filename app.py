@@ -121,7 +121,7 @@ def book_search():
 @app.route("/book_list")
 def book_list():
     list = db.list_book()
-    return render_template("book_list.html", books=list)
+    return render_template("book_list_form.html", books=list)
 
 @app.route("/book_update_form")
 def book_update_form():
