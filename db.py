@@ -132,7 +132,7 @@ def list_book():
     connection = get_connection()
     cursor = connection.cursor()
 
-    sql = "SELECT ISBN,title,author,publisher FROM book_tosyo"
+    sql = "SELECT id,ISBN,title,author,publisher FROM book_tosyo"
 
     cursor.execute(sql)
 

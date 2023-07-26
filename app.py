@@ -136,7 +136,7 @@ def book_update():
     id = request.form.get("id")
 
     db.update_book(ISBN, title, author, publisher, id)
-    return render_template("book_update.html")
+    return render_template("book_update_form2.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
