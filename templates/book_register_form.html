@@ -41,10 +41,10 @@
       <p style="color: red">{{error}}</p>
       {% endif %}
       <form action="{{url_for('book_register')}}" method="post">
-        ISBN:<input type="text" name="isbn" value="{{isbn}}" ><br/>
-        タイトル:<input type="text" name="title" value="{{title}}" ><br/>
-        著者:<input type="text" name="author" value="{{author}}" ><br/>
-        出版社：<input type="text" name="publisher" value="{{publisher}}" ><br/><br/>
+        <input type="text" name="isbn" placeholder="ISBN"  value="{{isbn}}" ><br/>
+        <input type="text" name="title" placeholder="タイトル" value="{{title}}" ><br/>
+        <input type="text" name="author" placeholder="著者" value="{{author}}" ><br/>
+        <input type="text" name="publisher" placeholder="出版社" value="{{publisher}}" ><br/><br/>
         <button style="color:red" type="submit">登録</button>
       </form>
     </div>

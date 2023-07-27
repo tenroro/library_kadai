@@ -37,8 +37,10 @@
     </header>
     <form action="{{url_for('book_update')}}" , method="post">
       <div>
-        <h3>編集</h3>
-        <input type="text" name="id"placeholder="id" ><br/>
+        <h1>編集</h1>
+        <h2  style="color:red">編集したい本のIdを入力して下さい<h2/>
+        <input type="text" name="id"placeholder="id" ><br/><br/><br/>
+        <h2 style="color:red">編集内容を入力して下さい<h2/>
         <input type="text" id="ISBN" name="ISBN" placeholder="ISBN"><br/>
         <input type="text" id="title" name="title" placeholder="title"><br/>
         <input type="text" id="author" name="author" placeholder="author"><br/>

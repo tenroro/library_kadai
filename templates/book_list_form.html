@@ -38,7 +38,7 @@
     <div>
       <h3>検索したい本のタイトルを入力</h3>
 <form action="{{url_for('book_search')}}" method="post">
-  タイトル:<input type="text" name="title" value="{{title}}"><br/><br/>
+  <input type="text" name="title" placeholder="タイトル" value="{{title}}"><br/><br/>
   <button style="color:red" type="submit">検索</button>
       <h3>一覧</h3>
       <table border>

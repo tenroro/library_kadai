@@ -3,20 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static',filename='css/toayo.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}"/>
     <title>ユーザ登録</title>
   </head>
-  <body class="backgrounds">
-    <div>
+  <body>
       <h3>ユーザ登録画面</h3>
       {% if error != null %}
       <p style="color: red">{{error}}</p>
       {% endif %}
       <form action="{{url_for('register_exe')}}" method="post">
-        ユーザ名:<input type="text" name="username" value="{{user_name}}"><br/>
-        メールアドレス:<input type="text" name="mail" value="{{mail}}"><br/>
-        パスワード：<input type="password" name="password" value="{{password}}"><br/>
-        <button style="color:red" type="submit">登録</button>
+        <div class="Form">
+          <div class="Form-Item">
+            <p class="Form-Item-Label">
+              <span class="Form-Item-Label-Required">必須</span>名前
+            </p>
+        <input type="text" name="username" placeholder="名前"value="{{user_name}}"><br/></div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+        <input type="text" name="mail"placeholder="メールアドレス" value="{{mail}}"><br/></div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>password</p>
+        <input type="password" name="password" placeholder="password" value="{{password}}"><br/></div>
+        </div>
+        <button class="Form-Btn"type="submit">登録</button>
       </form>
     </div>
   </body>
