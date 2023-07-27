@@ -19,7 +19,7 @@
       <form action="{{url_for('login')}}" method="post">
         <form class="login-container">
         <p><input type="text" name="mail" placeholder="Email" value="{{data.mail if data is defined else ''}}"></p><br/><br/><br/>
-        <P><input type="password" name="password"placeholder="Password" value="{{data.password if data is defined else ''}}"></p><br/><br/><br/>
+        <P><input type="password" name="password"placeholder="Password" style="-webkit-text-security:disc;" value="{{data.password if data is defined else ''}}"></p><br/><br/><br/>
         <p><input type="submit"value="Log in"></p><br/><br/>
       </form>
       <a href="{{url_for('register_form')}}" style="color:white">新規登録</a>
