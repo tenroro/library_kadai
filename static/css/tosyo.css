@@ -173,7 +173,22 @@ body {
 .login input[type="submit"]:focus {
   border-color: #05a;
 }
+.c-form-text {
+  height: 2.4em;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px #ccc inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
+.c-form-text:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
 
 
 
